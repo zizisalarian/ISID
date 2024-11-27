@@ -1,0 +1,301 @@
+@font-face {
+    font-family: dinar;
+    src: url("./fonts/Dinar.ttf") format('truetype');
+
+}
+
+@font-face {
+    font-family: entezar;
+    src: url('./fonts/Entezar.ttf');
+}
+
+:root {
+    --bg-color: #f8faff;
+    --bg-color-input: #0066ff05;
+    /*--text-color: #6d9bdf;*/
+    --text-color: #fff;
+    --border-light: #e8e8e8;
+    --main-font: 'IRANSans';
+    --second-font: dinar;
+    --color-1: #334694;
+    /*--color-2: #00b3e4;*/
+    --color-2: #1892E3;
+    --nav-active-color: rgb(75, 119, 197);
+    --nav-active-bgcolor: rgba(75, 119, 197, 0.05);
+
+    --nav-color: rgb(75, 85, 99);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+}
+
+.border-lighter {
+    border: 1px solid var(--border-light)
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    font-family: var(--main-font), serif;
+}
+
+header {
+
+}
+
+header .top {
+    height: 80px;
+    background: #dde0e644;
+
+    img {
+        /*padding: 5px 0;*/
+        height: 100%;
+    }
+
+    .uni-logo {
+        font-family: var(--second-font);
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .main-logo {
+        height: 100%;
+
+        img {
+            padding: 5px 0;
+            height: 100%;
+        }
+    }
+}
+
+header .main {
+    /*height: 200px;*/
+
+    .main-top {
+        height: 120px;
+        width: 100%;
+        background-size: contain;
+        background: url("asset/image/ct6.jpg") bottom;
+
+        > div {
+
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+        }
+    }
+
+    .main-bottom {
+        min-height: 120px;
+        width: 100%;
+    }
+}
+
+.profile-img {
+
+    border-radius: 5px;
+    height: 100%;
+    aspect-ratio: 3/4 !important;
+    width: auto !important;
+    border: 2px solid transparent;
+    box-shadow: 0 0 5px #999;
+}
+
+.info-name {
+    color: #fff;
+
+    h2 {
+        font-family: dinar;
+    }
+}
+
+.h-index {
+    border: 1px solid #fff;
+    font-size: 0.8rem;
+    width: 200px;
+    text-align: center;
+
+    p {
+        font-size: 2rem;
+    }
+
+}
+
+.buttons {
+    width: 200px;
+    border: 1px solid #287cfb;
+
+    a svg {
+        width: 20px;
+        height: 20px;
+
+        path {
+            fill: #5988ec
+        }
+    }
+}
+
+.info-pro {
+    p {
+
+        color: #444;
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+
+        span {
+            color: #444;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.tabs {
+    background: var(--bg-color);
+    bottom: 0;
+    z-index: 9;
+}
+
+.bg-cover {
+
+    width: 100%;
+    height: 1000px;
+    background: url("./asset/image/50-Beautiful-and-Minimalist-Presentation-Backgrounds-036.jpg") no-repeat;
+    opacity: 0.1;
+    background-size: cover;
+}
+
+
+.tabs-container {
+    background: linear-gradient(90deg, #1997e7 0, #083895);
+
+    > div {
+        background-color: #ffffffee;
+    }
+}
+
+.nav-pills {
+    /*background: #00000011;*/
+
+}
+
+.nav-item {
+    position: relative;
+
+    backdrop-filter: blur(3px);
+
+    svg {
+        width: 1.4rem;
+        height: 1.4rem;
+
+        * {
+            fill: var(--nav-color);;
+        }
+    }
+
+    .nav-link {
+        border-left: 1px solid #ccc;
+        font-size: 0.9rem;
+        color: var(--nav-color);
+        font-weight: bold;
+
+        &:hover {
+            color: var(--nav-color);
+        }
+    }
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--nav-active-color);
+    bottom: 0;
+    transform: scaleX(0);
+    left: 0;
+    transition: 0.5s;
+}
+
+.nav-item:has(.active)::before {
+    transform: scaleX(0.8);
+}
+
+.nav-item .nav-link.active {
+    background-color: transparent;
+    color: var(--nav-active-color);
+
+    svg {
+        * {
+            fill: var(--nav-active-color);
+        }
+    }
+}
+
+.main-content-body {
+
+}
+
+.content-title h3,
+.content-title .content-title-date {
+    min-width: fit-content;
+}
+
+.content-title {
+
+    h3 {
+       
+    color: var(--nav-active-color);
+        font-size: 1.2rem;
+        span:first-child {
+            background-color: var(--nav-active-bgcolor);
+            padding: 5px;
+            border-radius: 5px;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border: 1px solid var(--nav-active-bgcolor);
+
+            svg {
+                width: 100%;
+                height: 100%;
+
+                path {
+                    fill: var(--nav-active-color);
+                }
+
+            }
+        }
+        
+
+    }
+        .dotted-line{
+            height: 1px ;
+            border-top: 2px dotted #eee;
+        }
+}
