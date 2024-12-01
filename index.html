@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,847 +9,587 @@
     <link rel="stylesheet" href="./style.css">
     <title>ISID</title>
 </head>
+
 <body>
-<header class="py-4 position-relative w-100">
-    <div class="header-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-    <div class="header-mask-image position-absolute top-0 start-0 w-100 h-100"></div>
+    <header class="py-4 position-relative w-100">
+        <div class="header-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
+        <div class="header-mask-image position-absolute top-0 start-0 w-100 h-100"></div>
 
-    <div class="container position-relative z-2">
-        <div class="row align-items-center">
-            <div class="logo-name col-4 ">
-                <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
-                    <img src="./asset/image/logo-blue.png" alt="logo">
-<!--                    <img src="./asset/image/logo-white.png" alt="logo">-->
-                    <h2 class="text-center">
-                        معاونت پژوهشی
-                        <br>
-                        دفتر سیاستگذاری و برنامه ریزی امور پژوهشی
-                    </h2>
-                    <h3 class="text-center">
-                        سامانه علم سنجی اعضای هیأت علمی،
-                        <br>
-                        دانشگاه‌ها و مراکز پژوهشی
-                    </h3>
-                </a>
-            </div>
-
-            <div class="search-container col-8 ">
-                <div class="result-filter mb-3">
-                    <div class="d-flex justify-content-end align-items-center gap-2">
-                        <h6>تعداد نتایج: </h6>
-                        <span>156 موسسه</span>
-                    </div>
-                    <div id="clear-filters" class="d-flex justify-content-end align-items-center gap-2">
-                        حذف فیلترها
-                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
-                            <path d="m13.063,13.74c.301.185.613.353.937.5v9.772l-6-3.6v-6.222L0,5.19v-2.69C0,1.122,1.122,0,2.5,0h9.528c-.362.305-.696.64-1.003,1H2.5c-.827,0-1.5.673-1.5,1.5v2.31l8,9v6.035l4,2.4v-8.435l.063-.07Zm6.427-9.936l-1.99,1.99-1.99-1.99-.707.707,1.99,1.99-1.99,1.99.707.707,1.99-1.99,1.99,1.99.707-.707-1.99-1.99,1.99-1.99-.707-.707Zm4.51,2.697c0,3.584-2.916,6.5-6.5,6.5s-6.5-2.916-6.5-6.5S13.916,0,17.5,0s6.5,2.916,6.5,6.5Zm-1,0c0-3.033-2.467-5.5-5.5-5.5s-5.5,2.467-5.5,5.5,2.467,5.5,5.5,5.5,5.5-2.467,5.5-5.5Z"/>
-                        </svg>
-
-
-                    </div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="logo-name col-4 ">
+                    <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
+                        <img src="./asset/image/logo-blue.png" alt="logo">
+                        <!--                    <img src="./asset/image/logo-white.png" alt="logo">-->
+                        <h2 class="text-center">
+                            معاونت پژوهشی
+                            <br>
+                            دفتر سیاستگذاری و برنامه ریزی امور پژوهشی
+                        </h2>
+                        <h3 class="text-center">
+                            سامانه علم سنجی اعضای هیأت علمی،
+                            <br>
+                            دانشگاه‌ها و مراکز پژوهشی
+                        </h3>
+                    </a>
                 </div>
-                <form action="">
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="province" class="text-end"> استان</label>
-                        <select name="province" id="province">
-                            <option value="">همه استان ها</option>
-                            <option value="1">تهران</option>
-                            <option value="2">البرز</option>
-                            <option value="3">مازندران</option>
-                            <option value="4">آذربایجان شرقی</option>
-                            <option value="5">کرمان</option>
-                        </select>
-                    </div>
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="selUser" class="text-end"> موسسه</label>
 
-                        <select id="selUser">
-                            <option value="">همه دانشگاه ها / مؤسسات</option>
-                            <option value="3713"> جامعه المصطفی العالمیه</option>
-                            <option value="3723"> غیردولتی- غیرانتفاعی شیخ بهایی</option>
-                            <option value="29">آیت الله العظمی بروجردی (ره)</option>
-                            <option value="4">اراک</option>
-                            <option value="5">اردکان</option>
-                            <option value="6">ارومیه</option>
-                            <option value="7">اصفهان</option>
-                            <option value="8">الزهرا(س)</option>
-                            <option value="9">امام صادق (ع)</option>
-                            <option value="10">ایلام</option>
-                            <option value="11">بجنورد</option>
-                            <option value="12">بزرگمهر قائنات</option>
-                            <option value="13">بناب</option>
-                            <option value="14">بوعلی سینا</option>
-                            <option value="1461">بیرجند</option>
-                            <option value="1362">بین المللی امام رضا (ع)</option>
-                            <option value="1375">بین&zwnj;المللی امام خمینی (ره)</option>
-                            <option value="1360">پدافند هوایی خاتم الانبیا(ص)</option>
-                            <option value="1520">پژوهشگاه بین المللی زلزله شناسی و مهندسی زلزله</option>
-                            <option value="1483">پژوهشگاه پلیمر و پتروشیمی ایران</option>
-                            <option value="1508">پژوهشگاه تربیت بدنی و علوم ورزشی</option>
-                            <option value="1521">پژوهشگاه حوزه و دانشگاه</option>
-                            <option value="1475">پژوهشگاه دانش های بنیادی</option>
-                            <option value="1504">پژوهشگاه رنگ</option>
-                            <option value="1467">پژوهشگاه شیمی و مهندسی شیمی ایران</option>
-                            <option value="1587">پژوهشگاه صنعت نفت- وزارت نفت</option>
-                            <option value="1522">پژوهشگاه علوم انسانی و مطالعات فرهنگی</option>
-                            <option value="2735">پژوهشگاه علوم و فرهنگ اسلامی</option>
-                            <option value="1523">پژوهشگاه علوم و فناوری اطلاعات ایران</option>
-                            <option value="1591">پژوهشگاه فرهنگ و اندیشه اسلامی</option>
-                            <option value="1499">پژوهشگاه ملی اقیانوس شناسی و علوم جوی</option>
-                            <option value="1507">پژوهشگاه ملی مهندسی ژنتیک و زیست فناوری</option>
-                            <option value="1473">پژوهشگاه مواد و انرژی</option>
-                            <option value="1611">پژوهشگاه هواشناسی و علوم جو</option>
-                            <option value="5968">پژوهشگاه هوافضا</option>
-                            <option value="1631">پژوهشکده علوم زمین</option>
-                            <option value="2765">پژوهشکده محیط زیست و توسعه پایدار</option>
-                            <option value="1491">پیام نور</option>
-                            <option value="18">تبریز</option>
-                            <option value="256">تحصیلات تکمیلی صنعتی و فناوری پیشرفته کرمان</option>
-                            <option value="19">تحصیلات تکمیلی علوم پایه زنجان</option>
-                            <option value="290">تخصصی فناوری های نوین آمل</option>
-                            <option value="21">تربت حیدریه</option>
-                            <option value="268">تربیت دبیر شهید رجایی</option>
-                            <option value="1419">تربیت مدرس</option>
-                            <option value="24">تفرش</option>
-                            <option value="25">تهران</option>
-                            <option value="138">جامع امام حسین (ع)</option>
-                            <option value="26">جامع علمی ـ کاربردی</option>
-                            <option value="27">جهرم</option>
-                            <option value="28">جیرفت</option>
-                            <option value="30">حضرت معصومه(س) قم</option>
-                            <option value="32">حکیم سبزواری</option>
-                            <option value="33">خلیج فارس</option>
-                            <option value="34">خوارزمی</option>
-                            <option value="35">دامغان</option>
-                            <option value="1456">دانشکده علوم کشاورزی و منابع طبیعی داراب</option>
-                            <option value="1513">دانشکده فنی و مهندسی گرمسار</option>
-                            <option value="36">دریانوردی و علوم دریایی چابهار</option>
-                            <option value="226">رازی</option>
-                            <option value="38">زابل</option>
-                            <option value="39">زنجان</option>
-                            <option value="1505">سازمان پژوهش های علمی و صنعتی ایران</option>
-                            <option value="1562">سازمان مطالعه و تدوین کتب علوم انسانی دانشگاهها (پژوهشکده تحقیق و توسعه
-                                "سمت")
-                            </option>
-                            <option value="40">سلمان فارسی کازرون</option>
-                            <option value="41">سمنان</option>
-                            <option value="42">سیدجمال الدین اسدآبادی</option>
-                            <option value="43">سیستان و بلوچستان</option>
-                            <option value="44">شاهد</option>
-                            <option value="46">شهرکرد</option>
-                            <option value="49">شهید باهنر کرمان</option>
-                            <option value="47">شهید بهشتی</option>
-                            <option value="50">شهید چمران اهواز</option>
-                            <option value="48">شهید مدنی آذربایجان-تبریز</option>
-                            <option value="51">شیراز</option>
-                            <option value="3697">صدا و سیما</option>
-                            <option value="52">صنعت نفت</option>
-                            <option value="1453">صنعتی اراک</option>
-                            <option value="54">صنعتی ارومیه</option>
-                            <option value="63">صنعتی اصفهان</option>
-                            <option value="1470">صنعتی امیر کبیر</option>
-                            <option value="55">صنعتی بیرجند</option>
-                            <option value="56">صنعتی جندی شاپور</option>
-                            <option value="57">صنعتی خاتم الانبیا بهبهان</option>
-                            <option value="66">صنعتی خواجه نصیرالدین طوسی</option>
-                            <option value="67">صنعتی سهند تبریز</option>
-                            <option value="58">صنعتی سیرجان</option>
-                            <option value="276">صنعتی شاهرود</option>
-                            <option value="68">صنعتی شریف</option>
-                            <option value="59">صنعتی شهدای هویزه</option>
-                            <option value="69">صنعتی شیراز</option>
-                            <option value="60">صنعتی قم</option>
-                            <option value="1492">صنعتی قوچان</option>
-                            <option value="220">صنعتی نوشیروانی بابل</option>
-                            <option value="62">صنعتی همدان</option>
-                            <option value="61">صنعتی کرمانشاه</option>
-                            <option value="70">علامه طباطبایی</option>
-                            <option value="73">علم و صنعت ایران</option>
-                            <option value="238">علم و فرهنگ</option>
-                            <option value="74">علم و فناوری مازندران</option>
-                            <option value="78">علوم و فنون دریایی خرمشهر</option>
-                            <option value="86">علوم کشاورزی و منابع طبیعی خوزستان</option>
-                            <option value="77">علوم کشاورزی و منابع طبیعی ساری</option>
-                            <option value="79">علوم کشاورزی و منابع طبیعی گرگان</option>
-                            <option value="80">فردوسی مشهد</option>
-                            <option value="81">فرزانگان سمنان</option>
-                            <option value="82">فسا</option>
-                            <option value="148">فنی و حرفه ای</option>
-                            <option value="85">قم</option>
-                            <option value="89">گلستان</option>
-                            <option value="90">گنبد</option>
-                            <option value="91">گیلان</option>
-                            <option value="93">لرستان</option>
-                            <option value="3893">مؤسسه پژوهش های برنامه ریزی، اقتصاد کشاورزی و توسعه روستایی</option>
-                            <option value="1495">مؤسسه تحقیقات جمعیت کشور</option>
-                            <option value="1633">مؤسسه مطالعات فرهنگی و اجتماعی</option>
-                            <option value="94">مازندران</option>
-                            <option value="115">مجتمع آموزش عالی اسفراین</option>
-                            <option value="116">مجتمع آموزش عالی بم</option>
-                            <option value="118">مجتمع آموزش عالی تربت جام</option>
-                            <option value="119">مجتمع آموزش عالی زرند</option>
-                            <option value="120">مجتمع آموزش عالی سراوان</option>
-                            <option value="121">مجتمع آموزش عالی گناباد</option>
-                            <option value="1482">مجتمع آموزش عالی لارستان</option>
-                            <option value="95">محقق اردبیلی</option>
-                            <option value="71">مراغه</option>
-                            <option value="3899">مرکز آموزش عالی استهبان</option>
-                            <option value="127">مرکز آموزش عالی اقلید</option>
-                            <option value="1506">مرکز آموزش عالی فیروزآباد</option>
-                            <option value="1486">مرکز آموزش عالی محلات</option>
-                            <option value="131">مرکز آموزش عالی ممسنی</option>
-                            <option value="1488">مرکز آموزش عالی کاشمر(ویژه پسران)</option>
-                            <option value="1527">مرکز تحقیقات سیاست علمی کشور</option>
-                            <option value="1524">مرکز رشد پژوهشگاه هوافضا</option>
-                            <option value="129">مرکزآموزش عالی فنی و مهندسی بوئین زهرا</option>
-                            <option value="72">ملایر</option>
-                            <option value="3958">موزه ملی علوم و فناوری ایران</option>
-                            <option value="4078">موسسه آموزش عالی غیردولتی غیرانتفاعی رفاه</option>
-                            <option value="3957">موسسه استنادی و پایش علم و فناوری جهان اسلام (ای اس سی)</option>
-                            <option value="1558">موسسه پژوهش و برنامه ریزی آموزش عالی</option>
-                            <option value="1559">موسسه پژوهشی حکمت و فلسفه ایران</option>
-                            <option value="1525">موسسه پژوهشی علوم و صنایع غذایی</option>
-                            <option value="3">میبد</option>
-                            <option value="99">نیشابور</option>
-                            <option value="100">هرمزگان</option>
-                            <option value="102">هنر اسلامی تبریز</option>
-                            <option value="103">هنر اصفهان</option>
-                            <option value="101">هنر تهران</option>
-                            <option value="104">هنر شیراز</option>
-                            <option value="105">ولایت</option>
-                            <option value="106">ولی عصر(عج) رفسنجان</option>
-                            <option value="108">کاشان</option>
-                            <option value="109">کردستان</option>
-                            <option value="1452">کوثر بجنورد</option>
-                            <option value="110">یاسوج</option>
-                            <option value="107">یزد</option>
-                        </select>
-                    </div>
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="selUser3" class="text-end"> گروه علمی</label>
+                <div class="search-container col-8 ">
+                    <div class="result-filter mb-3">
+                        <div class="d-flex justify-content-end align-items-center gap-2">
+                            <h6>تعداد نتایج: </h6>
+                            <span>156 موسسه</span>
+                        </div>
+                        <div id="clear-filters" class="d-flex justify-content-end align-items-center gap-2">
+                            حذف فیلترها
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m13.063,13.74c.301.185.613.353.937.5v9.772l-6-3.6v-6.222L0,5.19v-2.69C0,1.122,1.122,0,2.5,0h9.528c-.362.305-.696.64-1.003,1H2.5c-.827,0-1.5.673-1.5,1.5v2.31l8,9v6.035l4,2.4v-8.435l.063-.07Zm6.427-9.936l-1.99,1.99-1.99-1.99-.707.707,1.99,1.99-1.99,1.99.707.707,1.99-1.99,1.99,1.99.707-.707-1.99-1.99,1.99-1.99-.707-.707Zm4.51,2.697c0,3.584-2.916,6.5-6.5,6.5s-6.5-2.916-6.5-6.5S13.916,0,17.5,0s6.5,2.916,6.5,6.5Zm-1,0c0-3.033-2.467-5.5-5.5-5.5s-5.5,2.467-5.5,5.5,2.467,5.5,5.5,5.5,5.5-2.467,5.5-5.5Z" />
+                            </svg>
 
-                        <select id="selUser3">
-                            <option value="">همه گروه های علمی&zwnj;</option>
-                            <option value="OloumEnsani">علوم انسانی</option>
-                            <option value="FanniMohandesi">فنی و مهندسی</option>
-                            <option value="Keshavarzi">کشاورزی و منابع طبیعی</option>
-                            <option value="Dampezeshki">دامپزشکی</option>
-                            <option value="OloumPaye">علوم پایه</option>
-                            <option value="Pezeshki">علوم پزشکی</option>
-                            <option value="Art">هنر و معماری</option>
-                        </select>
-                    </div>
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="selUser2" class="text-end"> زیر گروه</label>
 
-                        <select id="selUser2">
-                            <option value="">همه زیرگروه ها</option>
-                        </select>
+                        </div>
                     </div>
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="selUser1" class="text-end"> رشته تحصیلی</label>
+                    <form action="">
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="province" class="text-end"> استان</label>
+                            <select name="province" id="province">
+                                <option value="">همه استان ها</option>
+                                <option value="1">تهران</option>
+                                <option value="2">البرز</option>
+                                <option value="3">مازندران</option>
+                                <option value="4">آذربایجان شرقی</option>
+                                <option value="5">کرمان</option>
+                            </select>
+                        </div>
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="selUser" class="text-end"> موسسه</label>
 
-                        <select id="selUser1">
-                            <option value="">همه رشته های تحصیلی&zwnj;</option>
-                        </select>
-                    </div>
-                    <div class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
-                        <label for="selUser0" class="text-end"> گرایش</label>
+                            <select id="selUser">
+                                <option value="">همه دانشگاه ها / مؤسسات</option>
+                                <option value="3713"> جامعه المصطفی العالمیه</option>
+                                <option value="3723"> غیردولتی- غیرانتفاعی شیخ بهایی</option>
+                                <option value="29">آیت الله العظمی بروجردی (ره)</option>
+                                <option value="4">اراک</option>
+                                <option value="5">اردکان</option>
+                                <option value="6">ارومیه</option>
+                                <option value="7">اصفهان</option>
+                                <option value="8">الزهرا(س)</option>
+                                <option value="9">امام صادق (ع)</option>
+                                <option value="10">ایلام</option>
+                                <option value="11">بجنورد</option>
+                                <option value="12">بزرگمهر قائنات</option>
+                                <option value="13">بناب</option>
+                                <option value="14">بوعلی سینا</option>
+                                <option value="1461">بیرجند</option>
+                                <option value="1362">بین المللی امام رضا (ع)</option>
+                                <option value="1375">بین&zwnj;المللی امام خمینی (ره)</option>
+                                <option value="1360">پدافند هوایی خاتم الانبیا(ص)</option>
+                                <option value="1520">پژوهشگاه بین المللی زلزله شناسی و مهندسی زلزله</option>
+                                <option value="1483">پژوهشگاه پلیمر و پتروشیمی ایران</option>
+                                <option value="1508">پژوهشگاه تربیت بدنی و علوم ورزشی</option>
+                                <option value="1521">پژوهشگاه حوزه و دانشگاه</option>
+                                <option value="1475">پژوهشگاه دانش های بنیادی</option>
+                                <option value="1504">پژوهشگاه رنگ</option>
+                                <option value="1467">پژوهشگاه شیمی و مهندسی شیمی ایران</option>
+                                <option value="1587">پژوهشگاه صنعت نفت- وزارت نفت</option>
+                                <option value="1522">پژوهشگاه علوم انسانی و مطالعات فرهنگی</option>
+                                <option value="2735">پژوهشگاه علوم و فرهنگ اسلامی</option>
+                                <option value="1523">پژوهشگاه علوم و فناوری اطلاعات ایران</option>
+                                <option value="1591">پژوهشگاه فرهنگ و اندیشه اسلامی</option>
+                                <option value="1499">پژوهشگاه ملی اقیانوس شناسی و علوم جوی</option>
+                                <option value="1507">پژوهشگاه ملی مهندسی ژنتیک و زیست فناوری</option>
+                                <option value="1473">پژوهشگاه مواد و انرژی</option>
+                                <option value="1611">پژوهشگاه هواشناسی و علوم جو</option>
+                                <option value="5968">پژوهشگاه هوافضا</option>
+                                <option value="1631">پژوهشکده علوم زمین</option>
+                                <option value="2765">پژوهشکده محیط زیست و توسعه پایدار</option>
+                                <option value="1491">پیام نور</option>
+                                <option value="18">تبریز</option>
+                                <option value="256">تحصیلات تکمیلی صنعتی و فناوری پیشرفته کرمان</option>
+                                <option value="19">تحصیلات تکمیلی علوم پایه زنجان</option>
+                                <option value="290">تخصصی فناوری های نوین آمل</option>
+                                <option value="21">تربت حیدریه</option>
+                                <option value="268">تربیت دبیر شهید رجایی</option>
+                                <option value="1419">تربیت مدرس</option>
+                                <option value="24">تفرش</option>
+                                <option value="25">تهران</option>
+                                <option value="138">جامع امام حسین (ع)</option>
+                                <option value="26">جامع علمی ـ کاربردی</option>
+                                <option value="27">جهرم</option>
+                                <option value="28">جیرفت</option>
+                                <option value="30">حضرت معصومه(س) قم</option>
+                                <option value="32">حکیم سبزواری</option>
+                                <option value="33">خلیج فارس</option>
+                                <option value="34">خوارزمی</option>
+                                <option value="35">دامغان</option>
+                                <option value="1456">دانشکده علوم کشاورزی و منابع طبیعی داراب</option>
+                                <option value="1513">دانشکده فنی و مهندسی گرمسار</option>
+                                <option value="36">دریانوردی و علوم دریایی چابهار</option>
+                                <option value="226">رازی</option>
+                                <option value="38">زابل</option>
+                                <option value="39">زنجان</option>
+                                <option value="1505">سازمان پژوهش های علمی و صنعتی ایران</option>
+                                <option value="1562">سازمان مطالعه و تدوین کتب علوم انسانی دانشگاهها (پژوهشکده تحقیق و
+                                    توسعه
+                                    "سمت")
+                                </option>
+                                <option value="40">سلمان فارسی کازرون</option>
+                                <option value="41">سمنان</option>
+                                <option value="42">سیدجمال الدین اسدآبادی</option>
+                                <option value="43">سیستان و بلوچستان</option>
+                                <option value="44">شاهد</option>
+                                <option value="46">شهرکرد</option>
+                                <option value="49">شهید باهنر کرمان</option>
+                                <option value="47">شهید بهشتی</option>
+                                <option value="50">شهید چمران اهواز</option>
+                                <option value="48">شهید مدنی آذربایجان-تبریز</option>
+                                <option value="51">شیراز</option>
+                                <option value="3697">صدا و سیما</option>
+                                <option value="52">صنعت نفت</option>
+                                <option value="1453">صنعتی اراک</option>
+                                <option value="54">صنعتی ارومیه</option>
+                                <option value="63">صنعتی اصفهان</option>
+                                <option value="1470">صنعتی امیر کبیر</option>
+                                <option value="55">صنعتی بیرجند</option>
+                                <option value="56">صنعتی جندی شاپور</option>
+                                <option value="57">صنعتی خاتم الانبیا بهبهان</option>
+                                <option value="66">صنعتی خواجه نصیرالدین طوسی</option>
+                                <option value="67">صنعتی سهند تبریز</option>
+                                <option value="58">صنعتی سیرجان</option>
+                                <option value="276">صنعتی شاهرود</option>
+                                <option value="68">صنعتی شریف</option>
+                                <option value="59">صنعتی شهدای هویزه</option>
+                                <option value="69">صنعتی شیراز</option>
+                                <option value="60">صنعتی قم</option>
+                                <option value="1492">صنعتی قوچان</option>
+                                <option value="220">صنعتی نوشیروانی بابل</option>
+                                <option value="62">صنعتی همدان</option>
+                                <option value="61">صنعتی کرمانشاه</option>
+                                <option value="70">علامه طباطبایی</option>
+                                <option value="73">علم و صنعت ایران</option>
+                                <option value="238">علم و فرهنگ</option>
+                                <option value="74">علم و فناوری مازندران</option>
+                                <option value="78">علوم و فنون دریایی خرمشهر</option>
+                                <option value="86">علوم کشاورزی و منابع طبیعی خوزستان</option>
+                                <option value="77">علوم کشاورزی و منابع طبیعی ساری</option>
+                                <option value="79">علوم کشاورزی و منابع طبیعی گرگان</option>
+                                <option value="80">فردوسی مشهد</option>
+                                <option value="81">فرزانگان سمنان</option>
+                                <option value="82">فسا</option>
+                                <option value="148">فنی و حرفه ای</option>
+                                <option value="85">قم</option>
+                                <option value="89">گلستان</option>
+                                <option value="90">گنبد</option>
+                                <option value="91">گیلان</option>
+                                <option value="93">لرستان</option>
+                                <option value="3893">مؤسسه پژوهش های برنامه ریزی، اقتصاد کشاورزی و توسعه روستایی
+                                </option>
+                                <option value="1495">مؤسسه تحقیقات جمعیت کشور</option>
+                                <option value="1633">مؤسسه مطالعات فرهنگی و اجتماعی</option>
+                                <option value="94">مازندران</option>
+                                <option value="115">مجتمع آموزش عالی اسفراین</option>
+                                <option value="116">مجتمع آموزش عالی بم</option>
+                                <option value="118">مجتمع آموزش عالی تربت جام</option>
+                                <option value="119">مجتمع آموزش عالی زرند</option>
+                                <option value="120">مجتمع آموزش عالی سراوان</option>
+                                <option value="121">مجتمع آموزش عالی گناباد</option>
+                                <option value="1482">مجتمع آموزش عالی لارستان</option>
+                                <option value="95">محقق اردبیلی</option>
+                                <option value="71">مراغه</option>
+                                <option value="3899">مرکز آموزش عالی استهبان</option>
+                                <option value="127">مرکز آموزش عالی اقلید</option>
+                                <option value="1506">مرکز آموزش عالی فیروزآباد</option>
+                                <option value="1486">مرکز آموزش عالی محلات</option>
+                                <option value="131">مرکز آموزش عالی ممسنی</option>
+                                <option value="1488">مرکز آموزش عالی کاشمر(ویژه پسران)</option>
+                                <option value="1527">مرکز تحقیقات سیاست علمی کشور</option>
+                                <option value="1524">مرکز رشد پژوهشگاه هوافضا</option>
+                                <option value="129">مرکزآموزش عالی فنی و مهندسی بوئین زهرا</option>
+                                <option value="72">ملایر</option>
+                                <option value="3958">موزه ملی علوم و فناوری ایران</option>
+                                <option value="4078">موسسه آموزش عالی غیردولتی غیرانتفاعی رفاه</option>
+                                <option value="3957">موسسه استنادی و پایش علم و فناوری جهان اسلام (ای اس سی)</option>
+                                <option value="1558">موسسه پژوهش و برنامه ریزی آموزش عالی</option>
+                                <option value="1559">موسسه پژوهشی حکمت و فلسفه ایران</option>
+                                <option value="1525">موسسه پژوهشی علوم و صنایع غذایی</option>
+                                <option value="3">میبد</option>
+                                <option value="99">نیشابور</option>
+                                <option value="100">هرمزگان</option>
+                                <option value="102">هنر اسلامی تبریز</option>
+                                <option value="103">هنر اصفهان</option>
+                                <option value="101">هنر تهران</option>
+                                <option value="104">هنر شیراز</option>
+                                <option value="105">ولایت</option>
+                                <option value="106">ولی عصر(عج) رفسنجان</option>
+                                <option value="108">کاشان</option>
+                                <option value="109">کردستان</option>
+                                <option value="1452">کوثر بجنورد</option>
+                                <option value="110">یاسوج</option>
+                                <option value="107">یزد</option>
+                            </select>
+                        </div>
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="selUser3" class="text-end"> گروه علمی</label>
 
-                        <select id="selUser0" data-role="TrendId">
-                            <option value="">همه گرایش ها</option>
-                        </select>
-                    </div>
-                </form>
+                            <select id="selUser3">
+                                <option value="">همه گروه های علمی&zwnj;</option>
+                                <option value="OloumEnsani">علوم انسانی</option>
+                                <option value="FanniMohandesi">فنی و مهندسی</option>
+                                <option value="Keshavarzi">کشاورزی و منابع طبیعی</option>
+                                <option value="Dampezeshki">دامپزشکی</option>
+                                <option value="OloumPaye">علوم پایه</option>
+                                <option value="Pezeshki">علوم پزشکی</option>
+                                <option value="Art">هنر و معماری</option>
+                            </select>
+                        </div>
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="selUser2" class="text-end"> زیر گروه</label>
+
+                            <select id="selUser2">
+                                <option value="">همه زیرگروه ها</option>
+                            </select>
+                        </div>
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="selUser1" class="text-end"> رشته تحصیلی</label>
+
+                            <select id="selUser1">
+                                <option value="">همه رشته های تحصیلی&zwnj;</option>
+                            </select>
+                        </div>
+                        <div
+                            class="position-relative input-container d-flex justify-content-start align-items-center gap-3">
+                            <label for="selUser0" class="text-end"> گرایش</label>
+
+                            <select id="selUser0" data-role="TrendId">
+                                <option value="">همه گرایش ها</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
 
-</header>
-<main class="container">
-    <div class="mt-5">
+    </header>
+    <main class="container">
+        <div class="mt-5">
+            <button class="filter-top-one-percent">
+                پژوهشگران ۱٪ پراستناد برتر
+            </button>
+            <table class="w-100">
+                <thead>
+                    <tr>
 
-        <table class="w-100">
-            <thead>
-            <tr>
+                        <th colspan="3">فهرست دانشگاه ها / مؤسسات</th>
+                        <th>تعداد نتایج: <span> 156 مؤسسه</span></th>
+                        <th colspan="3">SCOPUS</th>
+                        <th colspan="3">آمار اعضای هیات علمی</th>
+                        <th colspan="3">اطلاعات تکمیلی</th>
+                       
+                    </tr>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام</th>
+                        <th>نام دانشگاه / مؤسسات</th>
+                        <th>نام استان</th>
+                        <th>مقالات</th>
+                        <th class="text-uppercase">H-Index</th>
+                        <th>استنادات</th>
+                        <th>کل</th>
+                        <th>مرد</th>
+                        <th>زن</th>
+                        <th>دانشجو</th>
+                        <th>نویسنده</th>
+                        <th>وبسایت</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    <tr>
+                        <td>1</td>
+                        <td><a href="./Profile-main.html">علی فهیم</a></td>
+                        <td> دانشگاه تهران</td>
+                        <td> تهران</td>
+                        <td>75398</td>
+                        <td> 126</td>
+                        <td>2185</td>
+                        <td>340945</td>
+                        <td> 306</td>
+                        <td>53488</td>
+                        <td>23720</td>
+                        <td>2185</td>
+                        <td>2185</td>
+                    </tr>
+                
+                    
+                </tbody>
+            </table>
 
-                <th colspan="2">فهرست دانشگاه ها / مؤسسات</th>
-                <th>تعداد نتایج: <span> 156 مؤسسه</span></th>
-                <th colspan="3">SCOPUS</th>
-                <th colspan="3">آمار اعضای هیات علمی</th>
-                <th colspan="3">اطلاعات تکمیلی</th>
-            </tr>
-            <tr>
-                <th>ردیف</th>
-                <th>نام دانشگاه / مؤسسات</th>
-                <th>نام استان</th>
-                <th>مقالات</th>
-                <th class="text-uppercase">H-Index</th>
-                <th>استنادات</th>
-                <th>کل</th>
-                <th>مرد</th>
-                <th>زن</th>
-                <th>دانشجو</th>
-                <th>نویسنده</th>
-                <th>وبسایت</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> دانشگاه تهران</td>
-                <td> دانشگاه تهران</td>
-                <td> تهران</td>
-                <td>75398</td>
-                <td> 126</td>
-                <td>2185</td>
-                <td>340945</td>
-                <td> 306</td>
-                <td>53488</td>
-                <td>23720</td>
-                <td>2185</td>
-            </tr>
-
-            </tbody>
-        </table>
-    
-    </div>
+        </div>
 
 
-</main>
-<a href="/" class="go-top">
+    </main>
+    <a href="/" class="go-top">
 
-</a>
-<footer class="position-relative mt-5">
-    <div class="container d-grid footer-box-container py-4">
-        <div class="footer-box rounded-2 p-3">
-            <div class="logo-name">
-                <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
-                    <img src="./asset/image/logo-white.png" alt="logo">
-                    <h2 class="text-center">
-                        معاونت پژوهشی
-                        <br>
-                        دفتر سیاستگذاری و برنامه ریزی امور پژوهشی
-                    </h2>
-                    <h3 class="text-center">
-                        سامانه علم سنجی اعضای هیأت علمی،
-                        <br>
-                        دانشگاه‌ها و مراکز پژوهشی
-                    </h3>
-                </a>
+    </a>
+    <footer class="position-relative mt-5">
+        <div class="container d-grid footer-box-container py-4">
+            <div class="footer-box rounded-2 p-3">
+                <div class="logo-name">
+                    <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
+                        <img src="./asset/image/logo-blue.png" alt="logo">
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="footer-box rounded-2 p-3 text-content d-flex flex-column gap-3 justify-content-start align-items-center">
+                <h2 class="text-center">
+                    معاونت پژوهشی
+                    <br>
+                    دفتر سیاستگذاری و برنامه ریزی امور پژوهشی
+                </h2>
+                <h3 class="text-center">
+                    سامانه علم سنجی اعضای هیأت علمی،
+                    <br>
+                    دانشگاه‌ها و مراکز پژوهشی
+                </h3>
+                <h4>
+                    
+                    پنجره واحد خدمات پژوهشی وزارت عتف
+                </h4>
+
+            </div>
+            <div class="footer-box rounded-2 p-3 links">
+                <h6 class="mb-3  pb-1 pe-3 d-inline-block  ">دسترسی ها</h6>
+                <ul class="px-0 mb-0">
+                    <li><a href="#" class="pb-1 d-inline-block">صفحه اصلی سامانه</a></li>
+                    <li><a href="#" class="pb-1 d-inline-block">معرفی سامانه</a></li>
+                    <li><a href="#" class="pb-1 d-inline-block">نقشه سامانه</a></li>
+                    <li><a href="#" class="pb-1 d-inline-block">درخواست اصلاح اطلاعات</a></li>
+                    <li><a href="#" class="pb-1 d-inline-block">تماس با بخش پشتیبانی</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-box rounded-2 p-3 text-content">
-            پنجره واحد
-            <br>
-            خدمات پژوهشی
-
-            <br>
-            وزارت عتف
-
+        <div class="copyRight">
+            <div class="container  py-2 text-center">
+                کلیه حقوق مادی و معنوی این سایت محفوظ و هرگونه کپی برداری از آن پیگرد قانونی دارد.
+            </div>
         </div>
-        <div class="footer-box rounded-2 p-3 links">
-            <h6 class="mb-3  pb-1 pe-3 d-inline-block  ">دسترسی ها</h6>
-            <ul class="px-0">
-                <li><a href="#" class="py-1 d-inline-block">صفحه اصلی سامانه</a></li>
-                <li><a href="#" class="py-1 d-inline-block">معرفی سامانه</a></li>
-                <li><a href="#" class="py-1 d-inline-block">نقشه سامانه</a></li>
-                <li><a href="#" class="py-1 d-inline-block">درخواست اصلاح اطلاعات</a></li>
-                <li><a href="#" class="py-1 d-inline-block">تماس با بخش پشتیبانی</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="copyRight">
-        <div class="container  py-2 text-center">
-            کلیه حقوق مادی و معنوی این سایت محفوظ و هرگونه کپی برداری از آن پیگرد قانونی دارد.
-        </div>
-    </div>
-    <div class="footer-icon position-absolute top-0 end-0 h-100">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
-             x="0px" y="0px" viewBox="0 0 178.8 183.6" style="enable-background:new 0 0 178.8 183.6;"
-             xml:space="preserve">
+        <div class="footer-icon position-absolute top-0 end-0 h-100">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Layer_1" x="0px" y="0px" viewBox="0 0 178.8 183.6" style="enable-background:new 0 0 178.8 183.6;"
+                xml:space="preserve">
 
-            <title>globe</title>
-            <path class="st0"
-                  d="M104,178.1c-6-0.4-16.6-1.5-23.4-3.4c-1.1-0.3-2.3,0.3-2.7,1.5c0,0,0,0,0,0c-0.2,0.8-0.5,1.8-0.8,2.7  c-0.4,1.1,0.2,2.4,1.4,2.7c0,0,0.1,0,0.1,0c3.8,1.1,12.2,2.8,24.1,1.7c0.2,0,0.5-0.1,0.7-0.2c0.6-0.3,1.2-0.7,1.8-1.1  c0.9-0.7,1.1-2.1,0.4-3.1C105.2,178.4,104.6,178.1,104,178.1z"/>
-            <path class="st0"
-                  d="M45.2,161.6c8,4.3,16.3,7.8,24.9,10.7c1.1,0.3,1.7,1.5,1.5,2.6c-0.2,0.7-0.3,1.4-0.5,2.2  c-0.3,1.2-1.4,1.9-2.6,1.7c-0.1,0-0.2,0-0.3-0.1c-4.4-1.6-14.1-5.4-20.3-10.7C48,167.9,45.6,166.1,45.2,161.6z"/>
-            <path class="st0"
-                  d="M86.7,145.9c-1.2,4.8-4,16.2-5.9,22.2c-0.4,1.2,0.3,2.4,1.5,2.7c0,0,0.1,0,0.1,0c9,2,18.2,3.3,27.5,3.9  c0.7,0,1.4-0.3,1.8-0.9c1.8-2.3,6.4-9.3,10.8-22.4c0.4-1.1-0.2-2.4-1.4-2.8c-0.2-0.1-0.4-0.1-0.6-0.1c-5.9-0.3-20-1.4-31.2-4.4  C88.2,144.1,87,144.7,86.7,145.9C86.7,145.9,86.7,145.9,86.7,145.9z"/>
-            <path class="st0"
-                  d="M127.2,177.1c0,0-8.1,4-15.3,4.8c0,0,1.7-1.5,3-2.8c0.4-0.4,0.9-0.6,1.5-0.6  C119.9,178.2,123.6,177.8,127.2,177.1z"/>
-            <path class="st0"
-                  d="M120.9,171.1c-0.6,1-0.3,2.4,0.7,3c0.4,0.2,0.8,0.3,1.2,0.3c5.5-0.2,15.1-1.2,20.4-5.3  c6.7-5.1,11.2-12.8,13.9-21.1c0.4-1.1-0.3-2.4-1.4-2.7c-0.4-0.1-0.9-0.1-1.3,0c-7.1,2.1-14.5,3.3-21.9,3.6c-0.9,0-1.7,0.6-2,1.5  C128,157.6,124.8,164.5,120.9,171.1z"/>
-            <path class="st0"
-                  d="M159.1,153.8c0,0,7.5-7.5,11.1-15.9c-1.6,1.3-3.3,2.4-5.1,3.5c-0.5,0.3-0.8,0.7-1,1.2  C162.8,146.4,161.1,150.2,159.1,153.8z"/>
-            <path class="st0"
-                  d="M135.3,142.2c5.7-0.4,18.4-1.5,24.4-5c0.5-0.3,0.9-0.8,1-1.4c0.9-3.8,3.9-18.8,1.2-32.3  c-0.3-1.2-1.4-1.9-2.6-1.6c-0.1,0-0.1,0-0.2,0.1c-6.7,2.1-13.6,3.5-20.6,4.2c-1.1,0.1-2.1,1-2.1,2.2c-0.2,10.5-1.3,21-3.4,31.3  c-0.3,1.2,0.4,2.3,1.6,2.6C134.9,142.2,135.1,142.2,135.3,142.2z"/>
-            <path class="st0"
-                  d="M166.6,129.9c-0.2,1.2,0.7,2.3,1.9,2.4c0.5,0.1,1.1-0.1,1.6-0.4c1.7-1.1,3-2.6,4-4.4c1.6-3.4,6.2-17.7,4.4-33.8  c-0.1-1.2-1.2-2.1-2.4-2c-0.6,0-1.1,0.3-1.5,0.8c-2,2.5-4.5,4.6-7.2,6.3c-0.8,0.5-1.2,1.4-1,2.3C167.1,104.8,168.5,115,166.6,129.9z  "/>
-            <path class="st0"
-                  d="M91.1,138c5.9,1.4,22.1,5,32.1,4.4c0.9-0.1,1.7-0.7,1.9-1.7c1.1-4.6,4.2-18.8,4.4-32.2c0-1.1-0.9-2.1-2-2.2  c-4.9-0.4-17.7-1.5-27.3-3.7c-1.2-0.3-2.3,0.4-2.6,1.6c0,0,0,0,0,0c-1.3,5.6-5.1,21.1-8,31.1c-0.3,1.1,0.3,2.3,1.5,2.7  C91,138,91.1,138,91.1,138z"/>
-            <path class="st0"
-                  d="M170.2,69.1c0,0-6.3-15.6-14.5-22.9c0.2,1.2,0.4,2.4,0.5,3.6c0,0.5,0.2,1,0.6,1.4  C162,56.6,166.5,62.6,170.2,69.1z"/>
-            <path class="st0"
-                  d="M156.8,55.3c3.4,3.4,10.7,11.7,16.5,25.9c0.3,0.6,0.2,1.4-0.1,2c-1.9,3.1-4.4,5.9-7.3,8.1  c-1,0.7-2.3,0.5-3.1-0.5c-0.1-0.2-0.2-0.4-0.3-0.6c-1.9-6-6.9-20.2-12.5-28.6c-0.6-0.9-0.4-2.2,0.5-2.9c1.1-0.9,2.2-1.9,3.1-3  c0.7-1,2.1-1.2,3-0.5C156.6,55.1,156.7,55.2,156.8,55.3z"/>
-            <path class="st0"
-                  d="M158.1,92.8c-2.8-10.3-6.6-20.4-11.3-30c-0.5-0.9-1.5-1.4-2.5-1.1c-3.5,0.9-7.1,1.6-10.7,2.1  c-1.2,0.1-2.1,1.2-1.9,2.4c0,0.1,0,0.1,0,0.2c1,5.9,3.6,21.7,4.2,30.3c0.1,1.2,1.1,2.1,2.3,2.1c0,0,0,0,0,0  c3.9-0.3,12.1-1.1,18.5-3.2C157.8,95.2,158.4,94,158.1,92.8z"/>
-            <path class="st0"
-                  d="M126.6,65.8c2.1,10.3,2.9,20.8,2.3,31.3c-0.1,1.2-1.1,2.1-2.3,2c0,0,0,0,0,0c-5.2-0.4-18.4-1.7-24.9-3.8  c-1.1-0.4-1.7-1.5-1.4-2.6c1.4-5.6,5.6-22.4,7-29c0.2-1.2,1.4-1.9,2.6-1.7c0,0,0,0,0,0c4.8,1.1,9.7,1.8,14.6,2  C125.5,64.1,126.3,64.8,126.6,65.8z"/>
-            <path class="st0"
-                  d="M111.3,56.2c3.6,0.9,7.2,1.5,10.9,1.7c1.2,0.1,2.2-0.8,2.3-2c0-0.3,0-0.6-0.1-0.8C123,51,120.3,43,118,37.3  c-0.4-1.1-1.7-1.7-2.8-1.2c-0.7,0.3-1.2,0.8-1.3,1.5c-1,4.5-2.6,10.7-4.1,15.9C109.4,54.7,110.1,55.9,111.3,56.2  C111.3,56.2,111.3,56.2,111.3,56.2z"/>
-            <path class="st0"
-                  d="M125.4,23.6c-2.8,0.4-5.6,1.1-8.2,2.1c0,0,0.4-1.2,0.8-2.6c0.4-1.1,1.6-1.8,2.8-1.4c0,0,0,0,0,0  C122.4,22.3,123.9,22.9,125.4,23.6z"/>
-            <path class="st0"
-                  d="M131.5,57.8c2.4-0.3,4.9-0.7,7.2-1.2c1.2-0.3,1.9-1.4,1.6-2.6c-0.1-0.3-0.2-0.6-0.4-0.8  c-4.3-5.7-9.1-10.9-14.4-15.7c-0.9-0.8-2.3-0.7-3.1,0.2c-0.6,0.7-0.7,1.7-0.3,2.5c2.6,5.1,5.6,11.3,6.9,16.2  C129.4,57.3,130.4,58,131.5,57.8z"/>
-            <path class="st0"
-                  d="M146.3,53c1.1-0.7,2.1-1.7,2.8-2.8c0.6-0.9,0.4-2.2-0.4-2.9c-3.8-3-7.8-5.8-12.1-8.3c-1-0.6-2.4-0.3-3,0.7  c-0.6,0.9-0.4,2.1,0.4,2.8c3.4,3.2,6.5,6.5,9.5,10.1C144.2,53.4,145.4,53.6,146.3,53z"/>
-            <path class="st0"
-                  d="M150.6,45.7c0-3.6-1.8-7-4.7-9.1c-0.1-0.1-0.3-0.2-0.4-0.3c-1.8-0.9-14-6.8-25.1-7.7  C120.4,28.7,141.2,36.4,150.6,45.7z"/>
-            <path class="st0"
-                  d="M138.9,30.1c-2.7-1.8-5.6-3.2-8.6-4.2c-0.2-0.1-0.4-0.1-0.6-0.1c-2.9,0-5.8,0.4-8.6,1.2  C121.1,27,131.5,27.5,138.9,30.1z"/>
-            <path class="st0"
-                  d="M73.9,116.5c-4.9-1.6-17.5-6.2-27.7-12.7c-1.9-1.2-2.8-3.6-2.1-5.7c1.8-5.8,5.7-17.3,11.3-25.3  c0.6-0.9,1.7-1.2,2.7-0.7c8.5,3.8,17.2,7.2,26.1,10c1.1,0.3,1.8,1.5,1.4,2.7c-1.4,5-5.3,18.3-9,30.4  C76.3,116.3,75.1,116.9,73.9,116.5C73.9,116.6,73.9,116.6,73.9,116.5z"/>
-            <path class="st0"
-                  d="M56.1,20.2C52.4,24.5,49,29,45.9,33.7c-0.6,1-1.9,1.3-2.9,0.8c-4.6-2.4-8.8-5.5-12.5-9.1  c-1.3-1.3-1.3-3.3-0.1-4.6c3.7-4,8.1-7.2,13.2-9.4c0.6-0.3,1.4-0.2,2,0.1c1.7,1,5.7,3.3,9.9,5.4c1.1,0.6,1.5,1.9,0.9,2.9  C56.3,20,56.2,20.1,56.1,20.2z"/>
-            <path class="st1"
-                  d="M31.3,133.3c-0.1-5.7,0-16,2.4-22.8c0.3-1-0.1-2-1-2.5c-6.5-3.9-12.5-8.6-17.8-13.9c-0.8-0.9-2.2-0.9-3.1-0.1  c-0.3,0.3-0.6,0.8-0.7,1.2c-0.9,5.2-1.7,14.2,1,21.7c3.2,9,10.4,14.7,15.7,18.3c1,0.7,2.3,0.5,3-0.5  C31.2,134.2,31.3,133.8,31.3,133.3z"/>
-            <path class="st1"
-                  d="M46.4,124.2c-0.8,4.7-2.4,12.6-2.3,20.4c0.1,2.4,1.4,4.6,3.6,5.8c5.4,2.9,16.1,8.5,23.1,10.8  c1.1,0.4,2.3-0.2,2.7-1.3c0-0.1,0-0.2,0.1-0.2c1.2-5.1,4-17.6,5.5-23.1c0.3-1.1-0.3-2.3-1.4-2.6c-5-1.6-18.3-6-28-11.2  c-1-0.6-2.3-0.2-2.9,0.8C46.5,123.8,46.4,124,46.4,124.2z"/>
-            <path class="st1"
-                  d="M29.5,81c2.8-8.7,6.7-17,11.4-24.8c0.6-1,0.3-2.3-0.7-3c0,0,0,0,0,0c-5.4-3.3-10.4-7.1-15-11.4  c-0.8-0.8-2.2-0.8-3,0c-3.4,3.2-11.4,11.5-14.6,22C7,65.7,7.5,67.7,9,69c3.5,3.3,10.8,9.7,17.4,13.2c1.1,0.6,2.4,0.2,3-0.9  C29.4,81.3,29.5,81.2,29.5,81z"/>
-            <path class="st1"
-                  d="M4.8,39.9c2.3-4.1,5.4-7.6,9.2-10.4c0.9-0.7,1.2-1.9,0.6-2.9L14,25.7c-0.6-1-1.8-1.4-2.9-0.8  C8.3,26.3,3,29.5,0.4,34.4c-0.3,0.7-0.4,1.4-0.3,2.1c0.1,0.8,0.4,1.8,0.7,3c0.4,1.1,1.7,1.7,2.8,1.3C4.1,40.7,4.5,40.4,4.8,39.9z"/>
-            <path class="st1"
-                  d="M93,39.7c-2,4.9-6.6,16.4-8.6,22.8c-0.4,1.1-1.6,1.8-2.7,1.4c-7.4-2.2-14.5-5-21.3-8.5  c-1.5-0.8-2.2-2.7-1.5-4.3c2-4.6,6.5-13.7,12.5-20.3c0.6-0.7,1.6-0.9,2.5-0.5c5.8,2.5,11.7,4.7,17.8,6.5c1.2,0.3,1.8,1.5,1.5,2.7  C93.1,39.6,93.1,39.7,93,39.7z"/>
-            <path class="st1"
-                  d="M27.3,4.2c-2.6,1.4-4.9,3.2-6.9,5.3c-0.8,0.9-2.2,0.9-3.1,0.1c-0.1-0.1-0.2-0.2-0.2-0.3c-0.4-0.5-0.7-1-1-1.5  c-0.6-0.9-0.4-2.1,0.4-2.8c2.7-2.2,5.8-3.9,9.2-4.9c0.7-0.2,1.5,0,2,0.5l0,0c0.9,0.8,1,2.2,0.3,3.1C27.7,3.9,27.5,4,27.3,4.2z"/>
-            <path class="st1"
-                  d="M71.8,12.5c2.7,1.3,6.4,3,10.7,4.6c1.1,0.4,2.2-0.1,2.7-1.1c1.2-2.4,2.5-4.6,4-6.8c0.7-1,0.5-2.3-0.5-3.1  c-0.4-0.3-0.9-0.4-1.4-0.4C82.2,6,77.1,6.9,72.1,8.4c-1.2,0.4-1.8,1.6-1.4,2.8C70.9,11.8,71.3,12.2,71.8,12.5z"/>
-        </svg>
-    </div>
-</footer>
+                <title>globe</title>
+                <path class="st0"
+                    d="M104,178.1c-6-0.4-16.6-1.5-23.4-3.4c-1.1-0.3-2.3,0.3-2.7,1.5c0,0,0,0,0,0c-0.2,0.8-0.5,1.8-0.8,2.7  c-0.4,1.1,0.2,2.4,1.4,2.7c0,0,0.1,0,0.1,0c3.8,1.1,12.2,2.8,24.1,1.7c0.2,0,0.5-0.1,0.7-0.2c0.6-0.3,1.2-0.7,1.8-1.1  c0.9-0.7,1.1-2.1,0.4-3.1C105.2,178.4,104.6,178.1,104,178.1z" />
+                <path class="st0"
+                    d="M45.2,161.6c8,4.3,16.3,7.8,24.9,10.7c1.1,0.3,1.7,1.5,1.5,2.6c-0.2,0.7-0.3,1.4-0.5,2.2  c-0.3,1.2-1.4,1.9-2.6,1.7c-0.1,0-0.2,0-0.3-0.1c-4.4-1.6-14.1-5.4-20.3-10.7C48,167.9,45.6,166.1,45.2,161.6z" />
+                <path class="st0"
+                    d="M86.7,145.9c-1.2,4.8-4,16.2-5.9,22.2c-0.4,1.2,0.3,2.4,1.5,2.7c0,0,0.1,0,0.1,0c9,2,18.2,3.3,27.5,3.9  c0.7,0,1.4-0.3,1.8-0.9c1.8-2.3,6.4-9.3,10.8-22.4c0.4-1.1-0.2-2.4-1.4-2.8c-0.2-0.1-0.4-0.1-0.6-0.1c-5.9-0.3-20-1.4-31.2-4.4  C88.2,144.1,87,144.7,86.7,145.9C86.7,145.9,86.7,145.9,86.7,145.9z" />
+                <path class="st0"
+                    d="M127.2,177.1c0,0-8.1,4-15.3,4.8c0,0,1.7-1.5,3-2.8c0.4-0.4,0.9-0.6,1.5-0.6  C119.9,178.2,123.6,177.8,127.2,177.1z" />
+                <path class="st0"
+                    d="M120.9,171.1c-0.6,1-0.3,2.4,0.7,3c0.4,0.2,0.8,0.3,1.2,0.3c5.5-0.2,15.1-1.2,20.4-5.3  c6.7-5.1,11.2-12.8,13.9-21.1c0.4-1.1-0.3-2.4-1.4-2.7c-0.4-0.1-0.9-0.1-1.3,0c-7.1,2.1-14.5,3.3-21.9,3.6c-0.9,0-1.7,0.6-2,1.5  C128,157.6,124.8,164.5,120.9,171.1z" />
+                <path class="st0"
+                    d="M159.1,153.8c0,0,7.5-7.5,11.1-15.9c-1.6,1.3-3.3,2.4-5.1,3.5c-0.5,0.3-0.8,0.7-1,1.2  C162.8,146.4,161.1,150.2,159.1,153.8z" />
+                <path class="st0"
+                    d="M135.3,142.2c5.7-0.4,18.4-1.5,24.4-5c0.5-0.3,0.9-0.8,1-1.4c0.9-3.8,3.9-18.8,1.2-32.3  c-0.3-1.2-1.4-1.9-2.6-1.6c-0.1,0-0.1,0-0.2,0.1c-6.7,2.1-13.6,3.5-20.6,4.2c-1.1,0.1-2.1,1-2.1,2.2c-0.2,10.5-1.3,21-3.4,31.3  c-0.3,1.2,0.4,2.3,1.6,2.6C134.9,142.2,135.1,142.2,135.3,142.2z" />
+                <path class="st0"
+                    d="M166.6,129.9c-0.2,1.2,0.7,2.3,1.9,2.4c0.5,0.1,1.1-0.1,1.6-0.4c1.7-1.1,3-2.6,4-4.4c1.6-3.4,6.2-17.7,4.4-33.8  c-0.1-1.2-1.2-2.1-2.4-2c-0.6,0-1.1,0.3-1.5,0.8c-2,2.5-4.5,4.6-7.2,6.3c-0.8,0.5-1.2,1.4-1,2.3C167.1,104.8,168.5,115,166.6,129.9z  " />
+                <path class="st0"
+                    d="M91.1,138c5.9,1.4,22.1,5,32.1,4.4c0.9-0.1,1.7-0.7,1.9-1.7c1.1-4.6,4.2-18.8,4.4-32.2c0-1.1-0.9-2.1-2-2.2  c-4.9-0.4-17.7-1.5-27.3-3.7c-1.2-0.3-2.3,0.4-2.6,1.6c0,0,0,0,0,0c-1.3,5.6-5.1,21.1-8,31.1c-0.3,1.1,0.3,2.3,1.5,2.7  C91,138,91.1,138,91.1,138z" />
+                <path class="st0"
+                    d="M170.2,69.1c0,0-6.3-15.6-14.5-22.9c0.2,1.2,0.4,2.4,0.5,3.6c0,0.5,0.2,1,0.6,1.4  C162,56.6,166.5,62.6,170.2,69.1z" />
+                <path class="st0"
+                    d="M156.8,55.3c3.4,3.4,10.7,11.7,16.5,25.9c0.3,0.6,0.2,1.4-0.1,2c-1.9,3.1-4.4,5.9-7.3,8.1  c-1,0.7-2.3,0.5-3.1-0.5c-0.1-0.2-0.2-0.4-0.3-0.6c-1.9-6-6.9-20.2-12.5-28.6c-0.6-0.9-0.4-2.2,0.5-2.9c1.1-0.9,2.2-1.9,3.1-3  c0.7-1,2.1-1.2,3-0.5C156.6,55.1,156.7,55.2,156.8,55.3z" />
+                <path class="st0"
+                    d="M158.1,92.8c-2.8-10.3-6.6-20.4-11.3-30c-0.5-0.9-1.5-1.4-2.5-1.1c-3.5,0.9-7.1,1.6-10.7,2.1  c-1.2,0.1-2.1,1.2-1.9,2.4c0,0.1,0,0.1,0,0.2c1,5.9,3.6,21.7,4.2,30.3c0.1,1.2,1.1,2.1,2.3,2.1c0,0,0,0,0,0  c3.9-0.3,12.1-1.1,18.5-3.2C157.8,95.2,158.4,94,158.1,92.8z" />
+                <path class="st0"
+                    d="M126.6,65.8c2.1,10.3,2.9,20.8,2.3,31.3c-0.1,1.2-1.1,2.1-2.3,2c0,0,0,0,0,0c-5.2-0.4-18.4-1.7-24.9-3.8  c-1.1-0.4-1.7-1.5-1.4-2.6c1.4-5.6,5.6-22.4,7-29c0.2-1.2,1.4-1.9,2.6-1.7c0,0,0,0,0,0c4.8,1.1,9.7,1.8,14.6,2  C125.5,64.1,126.3,64.8,126.6,65.8z" />
+                <path class="st0"
+                    d="M111.3,56.2c3.6,0.9,7.2,1.5,10.9,1.7c1.2,0.1,2.2-0.8,2.3-2c0-0.3,0-0.6-0.1-0.8C123,51,120.3,43,118,37.3  c-0.4-1.1-1.7-1.7-2.8-1.2c-0.7,0.3-1.2,0.8-1.3,1.5c-1,4.5-2.6,10.7-4.1,15.9C109.4,54.7,110.1,55.9,111.3,56.2  C111.3,56.2,111.3,56.2,111.3,56.2z" />
+                <path class="st0"
+                    d="M125.4,23.6c-2.8,0.4-5.6,1.1-8.2,2.1c0,0,0.4-1.2,0.8-2.6c0.4-1.1,1.6-1.8,2.8-1.4c0,0,0,0,0,0  C122.4,22.3,123.9,22.9,125.4,23.6z" />
+                <path class="st0"
+                    d="M131.5,57.8c2.4-0.3,4.9-0.7,7.2-1.2c1.2-0.3,1.9-1.4,1.6-2.6c-0.1-0.3-0.2-0.6-0.4-0.8  c-4.3-5.7-9.1-10.9-14.4-15.7c-0.9-0.8-2.3-0.7-3.1,0.2c-0.6,0.7-0.7,1.7-0.3,2.5c2.6,5.1,5.6,11.3,6.9,16.2  C129.4,57.3,130.4,58,131.5,57.8z" />
+                <path class="st0"
+                    d="M146.3,53c1.1-0.7,2.1-1.7,2.8-2.8c0.6-0.9,0.4-2.2-0.4-2.9c-3.8-3-7.8-5.8-12.1-8.3c-1-0.6-2.4-0.3-3,0.7  c-0.6,0.9-0.4,2.1,0.4,2.8c3.4,3.2,6.5,6.5,9.5,10.1C144.2,53.4,145.4,53.6,146.3,53z" />
+                <path class="st0"
+                    d="M150.6,45.7c0-3.6-1.8-7-4.7-9.1c-0.1-0.1-0.3-0.2-0.4-0.3c-1.8-0.9-14-6.8-25.1-7.7  C120.4,28.7,141.2,36.4,150.6,45.7z" />
+                <path class="st0"
+                    d="M138.9,30.1c-2.7-1.8-5.6-3.2-8.6-4.2c-0.2-0.1-0.4-0.1-0.6-0.1c-2.9,0-5.8,0.4-8.6,1.2  C121.1,27,131.5,27.5,138.9,30.1z" />
+                <path class="st0"
+                    d="M73.9,116.5c-4.9-1.6-17.5-6.2-27.7-12.7c-1.9-1.2-2.8-3.6-2.1-5.7c1.8-5.8,5.7-17.3,11.3-25.3  c0.6-0.9,1.7-1.2,2.7-0.7c8.5,3.8,17.2,7.2,26.1,10c1.1,0.3,1.8,1.5,1.4,2.7c-1.4,5-5.3,18.3-9,30.4  C76.3,116.3,75.1,116.9,73.9,116.5C73.9,116.6,73.9,116.6,73.9,116.5z" />
+                <path class="st0"
+                    d="M56.1,20.2C52.4,24.5,49,29,45.9,33.7c-0.6,1-1.9,1.3-2.9,0.8c-4.6-2.4-8.8-5.5-12.5-9.1  c-1.3-1.3-1.3-3.3-0.1-4.6c3.7-4,8.1-7.2,13.2-9.4c0.6-0.3,1.4-0.2,2,0.1c1.7,1,5.7,3.3,9.9,5.4c1.1,0.6,1.5,1.9,0.9,2.9  C56.3,20,56.2,20.1,56.1,20.2z" />
+                <path class="st1"
+                    d="M31.3,133.3c-0.1-5.7,0-16,2.4-22.8c0.3-1-0.1-2-1-2.5c-6.5-3.9-12.5-8.6-17.8-13.9c-0.8-0.9-2.2-0.9-3.1-0.1  c-0.3,0.3-0.6,0.8-0.7,1.2c-0.9,5.2-1.7,14.2,1,21.7c3.2,9,10.4,14.7,15.7,18.3c1,0.7,2.3,0.5,3-0.5  C31.2,134.2,31.3,133.8,31.3,133.3z" />
+                <path class="st1"
+                    d="M46.4,124.2c-0.8,4.7-2.4,12.6-2.3,20.4c0.1,2.4,1.4,4.6,3.6,5.8c5.4,2.9,16.1,8.5,23.1,10.8  c1.1,0.4,2.3-0.2,2.7-1.3c0-0.1,0-0.2,0.1-0.2c1.2-5.1,4-17.6,5.5-23.1c0.3-1.1-0.3-2.3-1.4-2.6c-5-1.6-18.3-6-28-11.2  c-1-0.6-2.3-0.2-2.9,0.8C46.5,123.8,46.4,124,46.4,124.2z" />
+                <path class="st1"
+                    d="M29.5,81c2.8-8.7,6.7-17,11.4-24.8c0.6-1,0.3-2.3-0.7-3c0,0,0,0,0,0c-5.4-3.3-10.4-7.1-15-11.4  c-0.8-0.8-2.2-0.8-3,0c-3.4,3.2-11.4,11.5-14.6,22C7,65.7,7.5,67.7,9,69c3.5,3.3,10.8,9.7,17.4,13.2c1.1,0.6,2.4,0.2,3-0.9  C29.4,81.3,29.5,81.2,29.5,81z" />
+                <path class="st1"
+                    d="M4.8,39.9c2.3-4.1,5.4-7.6,9.2-10.4c0.9-0.7,1.2-1.9,0.6-2.9L14,25.7c-0.6-1-1.8-1.4-2.9-0.8  C8.3,26.3,3,29.5,0.4,34.4c-0.3,0.7-0.4,1.4-0.3,2.1c0.1,0.8,0.4,1.8,0.7,3c0.4,1.1,1.7,1.7,2.8,1.3C4.1,40.7,4.5,40.4,4.8,39.9z" />
+                <path class="st1"
+                    d="M93,39.7c-2,4.9-6.6,16.4-8.6,22.8c-0.4,1.1-1.6,1.8-2.7,1.4c-7.4-2.2-14.5-5-21.3-8.5  c-1.5-0.8-2.2-2.7-1.5-4.3c2-4.6,6.5-13.7,12.5-20.3c0.6-0.7,1.6-0.9,2.5-0.5c5.8,2.5,11.7,4.7,17.8,6.5c1.2,0.3,1.8,1.5,1.5,2.7  C93.1,39.6,93.1,39.7,93,39.7z" />
+                <path class="st1"
+                    d="M27.3,4.2c-2.6,1.4-4.9,3.2-6.9,5.3c-0.8,0.9-2.2,0.9-3.1,0.1c-0.1-0.1-0.2-0.2-0.2-0.3c-0.4-0.5-0.7-1-1-1.5  c-0.6-0.9-0.4-2.1,0.4-2.8c2.7-2.2,5.8-3.9,9.2-4.9c0.7-0.2,1.5,0,2,0.5l0,0c0.9,0.8,1,2.2,0.3,3.1C27.7,3.9,27.5,4,27.3,4.2z" />
+                <path class="st1"
+                    d="M71.8,12.5c2.7,1.3,6.4,3,10.7,4.6c1.1,0.4,2.2-0.1,2.7-1.1c1.2-2.4,2.5-4.6,4-6.8c0.7-1,0.5-2.3-0.5-3.1  c-0.4-0.3-0.9-0.4-1.4-0.4C82.2,6,77.1,6.9,72.1,8.4c-1.2,0.4-1.8,1.6-1.4,2.8C70.9,11.8,71.3,12.2,71.8,12.5z" />
+            </svg>
+        </div>
+    </footer>
 </body>
 
 </html>

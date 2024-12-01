@@ -9,7 +9,7 @@ Highcharts.chart("container-WOS", {
         },
     },
     yAxis: {
-        min:0 ,
+        min: 0,
         labels: {
             enabled: false
         },
@@ -19,7 +19,7 @@ Highcharts.chart("container-WOS", {
     },
     plotOptions: {
         series: {
-            pointWidth:10,
+            pointWidth: 10,
             borderRadius: {
                 radius: 1
             },
@@ -55,7 +55,7 @@ Highcharts.chart("container-WOS", {
                 y: 5, // 10 pixels down from the top
                 style: {
                     fontSize: "10px",
-                    fontFamily: "Verdana, sans-serif",
+                    fontFamily: "IRANSans",
                 },
             },
         },
@@ -73,7 +73,7 @@ Highcharts.chart("container-scholar", {
         },
     },
     yAxis: {
-        min:0 ,
+        min: 0,
         labels: {
             enabled: false
         },
@@ -83,7 +83,7 @@ Highcharts.chart("container-scholar", {
     },
     plotOptions: {
         series: {
-            pointWidth:10,
+            pointWidth: 10,
             borderRadius: {
                 radius: 1
             },
@@ -137,7 +137,7 @@ Highcharts.chart("container-scopus", {
         },
     },
     yAxis: {
-        min:0 ,
+        min: 0,
         labels: {
             enabled: false
         },
@@ -147,7 +147,7 @@ Highcharts.chart("container-scopus", {
     },
     plotOptions: {
         series: {
-            pointWidth:10,
+            pointWidth: 10,
             borderRadius: {
                 radius: 1
             },
@@ -213,18 +213,18 @@ Highcharts.chart('card-scopus-article', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -262,7 +262,7 @@ Highcharts.chart('card-scopus-article', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -288,18 +288,18 @@ Highcharts.chart('card-scopus-document', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -314,7 +314,7 @@ Highcharts.chart('card-scopus-document', {
         colorByPoint: true,
         groupPadding: 0,
         data: [
-            ['1990',10],
+            ['1990', 10],
             ['1991', 38],
             ['1992', 29],
             ['1993', 23],
@@ -337,7 +337,7 @@ Highcharts.chart('card-scopus-document', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -362,18 +362,18 @@ Highcharts.chart('card-scopus-g-index', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -403,7 +403,7 @@ Highcharts.chart('card-scopus-g-index', {
             ['2002', 25],
             ['2010', 15],
             ['2011', 4],
-            ['2012',50],
+            ['2012', 50],
             ['2013', 14.86],
             ['2014', 14.16],
             ['2015', 13.79],
@@ -411,7 +411,7 @@ Highcharts.chart('card-scopus-g-index', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -437,18 +437,18 @@ Highcharts.chart('card-wos-article', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -486,7 +486,7 @@ Highcharts.chart('card-wos-article', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -512,18 +512,18 @@ Highcharts.chart('card-wos-document', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -538,7 +538,7 @@ Highcharts.chart('card-wos-document', {
         colorByPoint: true,
         groupPadding: 0,
         data: [
-            ['1990',10],
+            ['1990', 10],
             ['1991', 38],
             ['1992', 29],
             ['1993', 23],
@@ -561,7 +561,7 @@ Highcharts.chart('card-wos-document', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -586,18 +586,18 @@ Highcharts.chart('card-wos-g-index', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -627,7 +627,7 @@ Highcharts.chart('card-wos-g-index', {
             ['2002', 25],
             ['2010', 15],
             ['2011', 4],
-            ['2012',50],
+            ['2012', 50],
             ['2013', 14.86],
             ['2014', 14.16],
             ['2015', 13.79],
@@ -635,7 +635,7 @@ Highcharts.chart('card-wos-g-index', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -661,18 +661,18 @@ Highcharts.chart('card-scholar-article', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -710,7 +710,7 @@ Highcharts.chart('card-scholar-article', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -736,18 +736,18 @@ Highcharts.chart('card-scholar-document', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -762,7 +762,7 @@ Highcharts.chart('card-scholar-document', {
         colorByPoint: true,
         groupPadding: 0,
         data: [
-            ['1990',10],
+            ['1990', 10],
             ['1991', 38],
             ['1992', 29],
             ['1993', 23],
@@ -785,7 +785,7 @@ Highcharts.chart('card-scholar-document', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -810,18 +810,18 @@ Highcharts.chart('card-scholar-g-index', {
         labels: {
             enabled: false
         },
-       
+
     },
     legend: {
         enabled: false
     },
     tooltip: {
-        
+
         pointFormat: 'تعداد مقالات در سال{point.key}  این مقدار است {point.y:.1f}'
     },
-    plotOptions:{
+    plotOptions: {
         series: {
-            pointWidth:8,
+            pointWidth: 8,
             borderRadius: {
                 radius: 2
             },
@@ -851,7 +851,7 @@ Highcharts.chart('card-scholar-g-index', {
             ['2002', 25],
             ['2010', 15],
             ['2011', 4],
-            ['2012',50],
+            ['2012', 50],
             ['2013', 14.86],
             ['2014', 14.16],
             ['2015', 13.79],
@@ -859,7 +859,7 @@ Highcharts.chart('card-scholar-g-index', {
         ],
         dataLabels: {
             enabled: false,
-            
+
         }
     }]
 });
@@ -867,15 +867,15 @@ Highcharts.chart('card-scholar-g-index', {
 
 window.addEventListener('scroll', () => {
     let body = document.querySelector('body')
-    body.classList.toggle("scroll", window.scrollY > 0)
+    body.classList.toggle("scroll", window.scrollY > 400)
 })
 
 const text =
-"sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "+
-"sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "+
-"sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "+
-"sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "+
-"sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "
+    "sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental " +
+    "sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental " +
+    "sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental " +
+    "sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental " +
+    "sociations.  Professional articles are typically widely accessible  the public, but on industry-specific topics Some knowledge of the topic is usually presupposed, but you will also note that the author does take the time to explain some of the more fundamental "
 
 lines = text.replace(/[():'?0-9]+/g, "").split(/[,\. ]+/g),
     data = lines.reduce((arr, word) => {
@@ -914,7 +914,7 @@ Highcharts.chart("research-topics-chart", {
         align: "left",
     },
     subtitle: {
-       enabled: false
+        enabled: false
     },
     tooltip: {
         headerFormat:
@@ -931,7 +931,7 @@ Highcharts.chart('article-category-chart', {
         align: 'left'
     },
     subtitle: {
-       enabled: false
+        enabled: false
     },
 
     accessibility: {
@@ -1225,4 +1225,74 @@ Highcharts.chart('article-category-chart', {
 
 
 
+Highcharts.chart('colleague-chart', {
+    chart: {
+        type: 'column'
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            autoRotation: [-45, -90],
+            style: {
+                fontSize: '11px',
+                fontWeight: '500',
+                fontFamily: 'IRANSans'
+            }
+        }
+    },
+    yAxis: {
+        enabled: false
+
+    },
+    legend: {
+        enabled: false
+    },
+    tooltip: {
+        pointFormat: 'همکاری در  <b>{point.y} مقاله</b>',
+        style: {
+            fontSize: '11px',
+            fontWeight: '500',
+            fontFamily: 'IRANSans'
+        }
+
+    },
+    series: [{
+        name: 'Population',
+        colors: [
+            // '#9b20d9', '#9215ac', '#861ec9', '#7a17e6', '#7010f9', '#691af3',
+            // '#6225ed', '#5b30e7', '#533be1', '#4c46db', '#4551d5', '#3e5ccf',
+            // '#3667c9', '#2f72c3', '#277dbd', '#1f88b7', '#1693b1', '#0a9eaa',
+            // '#03c69b',  '#00f194'
+            '	hsl(221, 79%, 20%)', '	hsl(221, 79%, 25%)', '	hsl(221, 79%, 30%)', '	hsl(221, 79%, 35%)', '	hsl(221, 79%, 40%)', '	hsl(221, 79%, 45%)', '	hsl(221, 79%, 50%)', '	hsl(221, 79%, 55%)', '	hsl(221, 79%, 60%)', '	hsl(221, 79%, 65%)', '	hsl(221, 79%, 70%)'
+        ],
+        colorByPoint: true,
+        groupPadding: 0,
+        data: [
+            ['وحیده احراری', 589],
+            ['لیما ایمانی راد', 589],
+            ['حامد بخشیان سهی', 588],
+            ['مجتبی محمدی نجف آبادی', 586],
+            ['سید محسن اعتصامی', 560],
+            ['محسن خاکزاد', 559],
+            ['سعید پاک نیت مهدی آبادی', 499],
+            ['حسام الدین ارفعی', 325],
+            ['مجید هاشمی', 243],
+            ['احمد مشایی', 24]
+
+        ],
+        dataLabels: {
+            enabled: true,
+            // rotation: -90,
+            color: '#FFFFFF',
+            inside: true,
+            verticalAlign: 'top',
+            // format: '{point.y:.1f}', // one decimal
+            y: 10, // 10 pixels down from the top
+            style: {
+                fontSize: '13px',
+                fontFamily: 'IRANSans'
+            }
+        }
+    }]
+});
 

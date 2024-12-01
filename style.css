@@ -9,6 +9,12 @@
     src: url('./fonts/Entezar.ttf');
 }
 
+@font-face {
+    font-family: rezvan;
+    src: url("./fonts/Rezvan/fonts/REZVAN.ttf") format('truetype');
+
+}
+
 :root {
     --bg-color: #EEF3F999;
     --bg-color-input: #0066ff05;
@@ -29,7 +35,19 @@
     box-sizing: border-box;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-bottom: 0;
 }
 
@@ -103,7 +121,7 @@ body {
     font-size: 0.8rem;
     font-weight: 400;
 
-    + span {
+    +span {
         font-size: 0.9rem;
         font-weight: 500;
         color: var(--text-color);
@@ -143,6 +161,7 @@ body {
     backdrop-filter: blur(10px);
     transition: 0.4s;
 }
+
 .input-container option {
     color: #333;
 }
@@ -161,13 +180,22 @@ body {
 
 }
 
-table {
-}
+table {}
 
 table thead tr {
     border-bottom: 2px solid var(--color-2);
 }
 
+.filter-top-one-percent {
+    outline:none;
+    padding: 5px 15px;
+    border: 1px solid #6d9bdf;
+    background-color: #fff;
+    border-radius: 3px;
+    float: left;
+    font-size: .7rem;
+    margin-bottom: 10px;
+}
 table thead tr th {
     text-align: center;
     padding: 10px 0;
@@ -191,6 +219,7 @@ table tbody tr td {
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
 }
+
 table tbody tr td {
     text-align: center;
     padding: 15px 0;
@@ -198,15 +227,19 @@ table tbody tr td {
     color: hsl(0, 0%, 47%);
     font-weight: 400;
     transition: 0.5s;
- 
+    a{
+        color: hsl(0, 0%, 47%);
+    }
+
 }
+
 table tbody tr:nth-child(even) {
     background: #e7f2fa;
 }
 
 
 table tbody tr td:nth-child(5) {
-   color: hsl(0, 0%, 30%)
+    color: hsl(0, 0%, 30%)
 }
 
 table tbody tr:hover td {
@@ -217,10 +250,11 @@ table tbody tr:hover td {
 
 
 footer {
+    overflow: hidden;
     width: 100%;
     height: fit-content;
-    /*background: linear-gradient(90deg, #1997e7 0, #083895);*/
-    background-color: var(--bg-color);
+    background-color: #F5F8FB;
+    /* box-shadow: 0 0 5px #ccc; */
 }
 
 .footer-box-container {
@@ -232,9 +266,6 @@ footer {
 .footer-box {
     position: relative;
     z-index: 999;
-    /*background-color: rgba(255, 255, 255, 0.2);*/
-    /*-webkit-backdrop-filter: blur(5px);*/
-    /*backdrop-filter: blur(5px);*/
 
     img {
         width: 100px
@@ -243,12 +274,13 @@ footer {
     &.links {
 
         h6 {
-            /*border-bottom: 1px solid #e4eeff;*/
-            color: #e4eeff;
-            border-bottom:1px solid rgb(42, 80, 140);
+            color: rgb(42, 80, 140);
+            border-bottom: 1px solid rgb(42, 80, 140);
         }
 
         a {
+            font-size: .8rem;
+            line-height: 1rem;
             font-weight: lighter;
             color: rgb(42, 80, 140);
             transition: 0.4s;
@@ -267,11 +299,29 @@ footer {
 }
 
 .text-content {
-    /*font-family: entezar, serif;*/
-    /*color: #d9e9ff;*/
-    color: rgb(42, 80, 140);
-    /*font-size: 4.5rem;*/
-    line-height: 2.5rem;
+    h2 {
+        width: fit-content;
+        font-family: dinar, serif;
+        font-size: 0.8rem;
+        color: #ccc;
+    }
+
+    h3 {
+        font-family: dinar, serif;
+        font-size: 1rem;
+        color: var(--text-color);
+        width: fit-content;
+    }
+
+    h4 {
+        font-family: Rezvan;
+        /*color: #d9e9ff;*/
+        color: rgb(42, 80, 140);
+
+        /*font-size: 4.5rem;*/
+        line-height: 1.5rem;
+
+    }
 }
 
 .copyRight {
