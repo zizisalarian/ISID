@@ -187,7 +187,7 @@ table thead tr {
 }
 
 .filter-top-one-percent {
-    outline:none;
+    outline: none;
     padding: 5px 15px;
     border: 1px solid #6d9bdf;
     background-color: #fff;
@@ -196,6 +196,7 @@ table thead tr {
     font-size: .7rem;
     margin-bottom: 10px;
 }
+
 table thead tr th {
     text-align: center;
     padding: 10px 0;
@@ -211,32 +212,29 @@ table thead tr:last-child th {
 
 table tbody tr:hover {
     box-shadow: 0 0 15px 3px #EEF3F9;
-    /* transition: 0.5s;
-   border-bottom: 1px solid #e9e9e9;*/
 }
 
-table tbody tr td {
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-}
+/* table tbody tr td {} */
 
 table tbody tr td {
     text-align: center;
-    padding: 15px 0;
     font-size: 0.8rem;
     color: hsl(0, 0%, 47%);
     font-weight: 400;
     transition: 0.5s;
-    a{
+    min-width: 5rem;
+    padding: 1rem 0.2rem;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+    a {
         color: hsl(0, 0%, 47%);
     }
-
 }
 
 table tbody tr:nth-child(even) {
     background: #e7f2fa;
 }
-
 
 table tbody tr td:nth-child(5) {
     color: hsl(0, 0%, 30%)
@@ -335,7 +333,7 @@ footer {
     aspect-ratio: 1;
     width: auto;
     color: var(--text-color);
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .st0 {
@@ -344,4 +342,81 @@ footer {
 
 .st1 {
     fill: #00B1E1;
+}
+
+
+
+@media (max-width: 992px) {
+    .logo-name {
+        a {
+            img {
+                width: 70px
+            }
+        }
+
+        h2 {
+            font-size: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .search-btn {
+        width: fit-content;
+        background-color: var(--text-color);
+        color: #fff;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    label:has(#search-box) {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 0.8rem;
+    }
+
+    .search-container {
+        max-height: 0;
+        /* padding-top: 0; */
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    label:has(#search-box:checked)+.search-container {
+        /* padding-top: 0.5rem; */
+        max-height: 200px;
+        transition: 1s;
+    }
+
+    
+
+   
+}
+
+
+@media (max-width: 576px){
+    .footer-box-container {
+
+        grid-template-columns: revert
+    }
+
+    .footer-box {
+        &.links {
+
+            text-align: center;
+
+            h6 {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    .search-container form {
+        grid-template-columns: revert
+    }
+    label:has(#search-box:checked)+.search-container{
+        max-height: 400px;
+    }
 }

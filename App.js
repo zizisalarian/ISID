@@ -1295,4 +1295,3 @@ Highcharts.chart('colleague-chart', {
         }
     }]
 });
-

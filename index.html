@@ -13,12 +13,12 @@
 <body>
     <header class="py-4 position-relative w-100">
         <div class="header-mask position-absolute top-0 start-0 w-100 h-100 z-1"></div>
-        <div class="header-mask-image position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="header-mask-image position-absolute top-0 start-0 w-100 h-100 d-none d-lg-block"></div>
 
         <div class="container position-relative z-2">
             <div class="row align-items-center">
-                <div class="logo-name col-4 ">
-                    <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
+                <div class="logo-name col-12 col-lg-4">
+                    <a href="/" class="d-flex justify-content-start align-items-center gap-2 gap-lg-3 flex-column">
                         <img src="./asset/image/logo-blue.png" alt="logo">
                         <!--                    <img src="./asset/image/logo-white.png" alt="logo">-->
                         <h2 class="text-center">
@@ -34,7 +34,13 @@
                     </a>
                 </div>
 
-                <div class="search-container col-8 ">
+                <label for="search-box" class="d-inline-block d-lg-none">
+                    <input type="checkbox" class="d-none" id="search-box">
+                    <div class="search-btn d-flex d-lg-none rounded-2 mx-auto px-3 py-2 mt-3">
+                        جستجوی پیشرفته
+                    </div>
+                </label>
+                <div class="search-container col-lg-8">
                     <div class="result-filter mb-3">
                         <div class="d-flex justify-content-end align-items-center gap-2">
                             <h6>تعداد نتایج: </h6>
@@ -283,197 +289,199 @@
             <button class="filter-top-one-percent">
                 پژوهشگران ۱٪ پراستناد برتر
             </button>
-            <table class="w-100">
-                <thead>
-                    <tr>
+            <div class="table-responsive w-100">
+                <table class="w-100">
+                    <thead>
+                        <tr>
 
-                        <th colspan="3">فهرست دانشگاه ها / مؤسسات</th>
-                        <th>تعداد نتایج: <span> 156 مؤسسه</span></th>
-                        <th colspan="3">SCOPUS</th>
-                        <th colspan="3">آمار اعضای هیات علمی</th>
-                        <th colspan="3">اطلاعات تکمیلی</th>
-                       
-                    </tr>
-                    <tr>
-                        <th>ردیف</th>
-                        <th>نام</th>
-                        <th>نام دانشگاه / مؤسسات</th>
-                        <th>نام استان</th>
-                        <th>مقالات</th>
-                        <th class="text-uppercase">H-Index</th>
-                        <th>استنادات</th>
-                        <th>کل</th>
-                        <th>مرد</th>
-                        <th>زن</th>
-                        <th>دانشجو</th>
-                        <th>نویسنده</th>
-                        <th>وبسایت</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    <tr>
-                        <td>1</td>
-                        <td><a href="./Profile-main.html">علی فهیم</a></td>
-                        <td> دانشگاه تهران</td>
-                        <td> تهران</td>
-                        <td>75398</td>
-                        <td> 126</td>
-                        <td>2185</td>
-                        <td>340945</td>
-                        <td> 306</td>
-                        <td>53488</td>
-                        <td>23720</td>
-                        <td>2185</td>
-                        <td>2185</td>
-                    </tr>
-                
-                    
-                </tbody>
-            </table>
+                            <th colspan="3">فهرست دانشگاه ها / مؤسسات</th>
+                            <th>تعداد نتایج: <span> 156 مؤسسه</span></th>
+                            <th colspan="3">SCOPUS</th>
+                            <th colspan="3">آمار اعضای هیات علمی</th>
+                            <th colspan="3">اطلاعات تکمیلی</th>
+
+                        </tr>
+                        <tr>
+                            <th>ردیف</th>
+                            <th>نام</th>
+                            <th>نام دانشگاه / مؤسسات</th>
+                            <th>نام استان</th>
+                            <th>مقالات</th>
+                            <th class="text-uppercase">H-Index</th>
+                            <th>استنادات</th>
+                            <th>کل</th>
+                            <th>مرد</th>
+                            <th>زن</th>
+                            <th>دانشجو</th>
+                            <th>نویسنده</th>
+                            <th>وبسایت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./Profile-main.html">علی فهیم</a></td>
+                            <td> دانشگاه تهران</td>
+                            <td> تهران</td>
+                            <td>75398</td>
+                            <td> 126</td>
+                            <td>2185</td>
+                            <td>340945</td>
+                            <td> 306</td>
+                            <td>53488</td>
+                            <td>23720</td>
+                            <td>2185</td>
+                            <td>2185</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
 
         </div>
 
@@ -488,11 +496,12 @@
                 <div class="logo-name">
                     <a href="/" class="d-flex justify-content-start align-items-center gap-3 flex-column">
                         <img src="./asset/image/logo-blue.png" alt="logo">
-                        
+
                     </a>
                 </div>
             </div>
-            <div class="footer-box rounded-2 p-3 text-content d-flex flex-column gap-3 justify-content-start align-items-center">
+            <div
+                class="footer-box rounded-2 p-3 text-content d-flex flex-column gap-3 justify-content-start align-items-center">
                 <h2 class="text-center">
                     معاونت پژوهشی
                     <br>
@@ -504,7 +513,7 @@
                     دانشگاه‌ها و مراکز پژوهشی
                 </h3>
                 <h4>
-                    
+
                     پنجره واحد خدمات پژوهشی وزارت عتف
                 </h4>
 
@@ -525,7 +534,7 @@
                 کلیه حقوق مادی و معنوی این سایت محفوظ و هرگونه کپی برداری از آن پیگرد قانونی دارد.
             </div>
         </div>
-        <div class="footer-icon position-absolute top-0 end-0 h-100">
+        <div class="footer-icon position-absolute top-0 end-0 h-100 d-none d-sm-block">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 id="Layer_1" x="0px" y="0px" viewBox="0 0 178.8 183.6" style="enable-background:new 0 0 178.8 183.6;"
                 xml:space="preserve">
