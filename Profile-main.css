@@ -656,6 +656,7 @@ body {
             font-weight: 500;
             min-width: 500px;
             line-height: 1rem;
+            cursor: pointer;
 
             color: #333;
 
@@ -813,6 +814,49 @@ footer {
     fill: #00B1E1;
 }
 
+.article-line{
+    border-bottom: 1px solid #eee;
+    h6{
+        width: 130px;
+        font-size: 0.75rem;
+        flex-shrink: 0;
+        color: var(--main-color)
+        
+    }
+    p{
+        font-size: 0.75rem;
+        color: #666;
+        a{
+            font-size: 0.7rem;
+            color: var(--main-color-light);
+            font-weight: 600;
+        }
+        svg{
+            width: 15px;
+            height: 15px;
+            margin-top: -3px;
+            fill: var(--main-color-light)
+        }
+    }
+}
+.modal-header{
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    h5{
+        font-size: 0.9rem;
+        color: #333;
+
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        svg{
+            width: 15px;
+            height: 15px;
+            fill:#777
+        }
+    }
+}
 
 
 @media (max-width: 1200px) {
@@ -956,7 +1000,7 @@ footer {
     }
 
     .sticky-menu {
-        z-index: 9999;
+        /* z-index: 9999; */
         
         .sticky-menu-top {
             height: 65px;
@@ -1058,6 +1102,34 @@ footer {
                     overflow: hidden;
                     hyphens: auto;
                 }
+            }
+        }
+    }
+    .modal{
+        z-index: 999999;
+    }
+    .article-line{
+        border-bottom: 1px solid #eee;
+        h6{
+            width: 80px;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+            color: var(--main-color)
+            
+        }
+        p{
+            font-size: 0.75rem;
+            color: #666;
+            a{
+                font-size: 0.7rem;
+                color: var(--main-color-light);
+                font-weight: 600;
+            }
+            svg{
+                width: 15px;
+                height: 15px;
+                margin-top: -3px;
+                fill: var(--main-color-light)
             }
         }
     }

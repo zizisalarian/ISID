@@ -921,7 +921,6 @@ Highcharts.chart("research-topics-chart", {
             '<span style="font-size: 16px"><b>{point.name}</b>' + "</span><br>",
     },
 })
-
 Highcharts.chart('article-category-chart', {
     chart: {
         type: 'pie'
@@ -1221,10 +1220,6 @@ Highcharts.chart('article-category-chart', {
         ]
     }
 });
-
-
-
-
 Highcharts.chart('colleague-chart', {
     chart: {
         type: 'column'
